@@ -22,6 +22,7 @@ window.addEventListener('engineReady', (e) => {
     $('#filterInputString').remove()
 
     $('#shapeModeSelector').prop('value', 'Annotation')
+    $('#shapeModeSelector').trigger('change')
 
     $('#shapeTypeSelector').remove()
 
