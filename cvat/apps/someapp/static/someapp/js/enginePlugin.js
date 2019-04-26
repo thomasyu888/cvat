@@ -6,7 +6,7 @@
 
 window.addEventListener('engineReady', (e) => {
     // Auto save each 5 minutes
-    $('#autoSaveTime').prop('value', 5);
+    $('#autoSaveTime').prop('value', 1);
     $('#autoSaveBox').attr('checked', true);
     $('#autoSaveBox').trigger('change');
 
@@ -14,6 +14,10 @@ window.addEventListener('engineReady', (e) => {
     $('#fullScreenButton').remove();
     $('#switchAAMButton').remove();
     $('#removeAnnotationButton').remove();
+
+    $('#mergeTracksButton').remove()
+    $('#shapeModeSelector').prop('value', 'Annotation')
+    $('#polyShapeSize').remove()
 
     const { annotationSaverModel } = e.detail;
 
