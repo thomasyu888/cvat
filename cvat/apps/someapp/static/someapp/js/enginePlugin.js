@@ -17,13 +17,12 @@ window.addEventListener('engineReady', (e) => {
 
     $('#mergeTracksButton').remove()
     $('#groupShapesButton').remove()
-    $('#shapeModeSelector').prop('value', 'Annotation')
 
     $('#polyShapeSizeWrapper').remove()
     $('#filterInputString').remove()
 
+    $('#shapeModeSelector').prop('value', 'Annotation')
 
-    $('#shapeModeSelector').remove()
     $('#shapeTypeSelector').remove()
 
 
