@@ -16,8 +16,16 @@ window.addEventListener('engineReady', (e) => {
     $('#removeAnnotationButton').remove();
 
     $('#mergeTracksButton').remove()
+    $('#groupShapesButton').remove()
     $('#shapeModeSelector').prop('value', 'Annotation')
-    $('#polyShapeSize').remove()
+
+    $('#polyShapeSizeWrapper').remove()
+    $('#filterInputString').remove()
+
+
+    $('#shapeModeSelector').remove()
+    $('#shapeTypeSelector').remove()
+
 
     const { annotationSaverModel } = e.detail;
 
