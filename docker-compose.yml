@@ -57,6 +57,15 @@ services:
       - cvat_logs:/home/django/logs
       - cvat_models:/home/django/models
 
+  shiny-cvat:
+    image: docker.synapse.org/syn18584713/shinycvat
+    container_name: shiny_cvat
+    environment:
+      CVAT_PATH: "http://cvat:8080/api/v1"
+    ports:
+      - '8082:80'
+    depends_on:
+      - cvat
 volumes:
   cvat_db:
   cvat_data:
